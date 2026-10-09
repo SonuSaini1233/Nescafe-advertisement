@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NESCAFÉ Cold Brew Atelier | The Kinetic Art of Slow Extraction</title>
+  <meta name="description" content="Experience the slow-motion kinetic perfection of NESCAFÉ Cold Brew. Slow-steeped for 24 hours, chilled with crystalline alpine ice, and crowned with velvety micro-cream.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23d4a359' d='M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Custom Luxury Cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Preloader Overlay -->
+  <div id="loader-overlay" role="status" aria-live="polite">
+    <div class="loader-brand">NESCAFÉ <span>ATELIER</span></div>
+    <div class="loader-track">
+      <div id="loading-progress-bar"></div>
+    </div>
+    <div class="loader-status">
+      <span>Calibrating Kinetic Sequence</span>
+      <span id="loader-percent">0%</span>
+    </div>
+  </div>
+
+  <!-- Navigation Bar (Apple Frosted Glass) -->
+  <header class="site-nav">
+    <a href="#hero-scroller" class="nav-brand">
+      <svg class="nav-logo-mark" viewBox="0 0 24 24">
+        <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/>
+      </svg>
+      <span class="nav-brand-text">NESCAFÉ</span>
+      <span class="nav-brand-sub">COLD BREW ATELIER</span>
+    </a>
+
+    <nav aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="#product-experience" class="nav-link">The Extraction</a></li>
+        <li><a href="#sensory-section" class="nav-link">Sensory Notes</a></li>
+        <li><a href="#story-section" class="nav-link">The Story</a></li>
+        <li><a href="#variants-section" class="nav-link">The Reserve</a></li>
+        <li><a href="#atelier-studio" class="nav-link">Blend Studio</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="sound-toggle-btn" id="audio-toggle-btn" aria-label="Toggle ambient cold brew soundscape">
+        <div class="sound-wave">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="sound-status-text">Sound Off</span>
+      </button>
+      <a href="#reservation-section" class="btn-primary-pill">Reserve Allocation</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- ==========================================================================
+         HERO SECTION: 420vh PINNED SCROLLYTELLING CANVAS
+         ========================================================================== -->
+    <section id="hero-scroller" aria-label="Cinematic Cold Brew Interactive Showcase">
+      <div id="hero-sticky">
+        <!-- Interactive 60fps Dual-Buffer Canvas -->
+        <canvas id="hero-canvas"></canvas>
+
+        <!-- Ambient Glow Backplate -->
+        <div class="hero-glow-backplate" aria-hidden="true"></div>
+
+        <!-- Narrative Story Overlay Cards (Synced with Frames) -->
+        <div class="hero-narrative-container">
+
+          <!-- Card 1: Frames 0 - 38 -->
+          <div class="hero-story-card active" data-card="1">
+            <div class="card-step-badge">01 / 24H EXTRACTION</div>
+            <h1 class="card-title">Elevate Your Cold Brew.</h1>
+            <p class="card-desc">
+              Slow-steeped for twenty-four undisturbed hours in sub-zero alpine conditions. Micro-filtered single-origin Arabica marries velvety highland cream in suspended animation.
+            </p>
+            <div class="card-spec-row">
+              <div class="card-spec-item">
+                <span class="spec-val">24 hrs</span>
+                <span class="spec-lbl">Cold Gravity Drip</span>
+              </div>
+              <div class="card-spec-item">
+                <span class="spec-val">100%</span>
+                <span class="spec-lbl">Volcanic Arabica</span>
+              </div>
+              <div class="card-spec-item">
+                <span class="spec-val">0%</span>
+                <span class="spec-lbl">Harsh Acidity</span>
+              </div>
+            </div>
+            <div class="card-cta-group">
+              <a href="#product-experience" class="btn-primary-pill">Explore Science</a>
+              <a href="#reservation-section" class="btn-secondary-pill">Experience NESCAFÉ</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Frames 39 - 85 -->
+          <div class="hero-story-card" data-card="2">
+            <div class="card-step-badge">02 / THE CASCADE</div>
+            <h2 class="card-title">Crystalline Sub-Zero Descent.</h2>
+            <p class="card-desc">
+              Triple-purified glacial ice cubes plunge through rich coffee depths, chilling the liquid matrix instantly without rapid thermal dilution.
+            </p>
+            <div class="card-spec-row">
+              <div class="card-spec-item">
+                <span class="spec-val">-18°C</span>
+                <span class="spec-lbl">Glacial Crystal Core</span>
+              </div>
+              <div class="card-spec-item">
+                <span class="spec-val">3x</span>
+                <span class="spec-lbl">Slower Melt Curve</span>
+              </div>
+              <div class="card-spec-item">
+                <span class="spec-val">Pure</span>
+                <span class="spec-lbl">High-Density Ice</span>
+              </div>
+            </div>
+            <div class="card-cta-group">
+              <a href="#sensory-section" class="btn-secondary-pill">View Glacial Science</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Frames 86 - 138 -->
+          <div class="hero-story-card" data-card="3">
+            <div class="card-step-badge">03 / THE KINETIC IMPACT</div>
+            <h2 class="card-title">Kinetic Crown Hydraulics.</h2>
+            <p class="card-desc">
+              The explosive impact forms an aerodynamic golden crown. Thousands of micron-fine coffee droplets rise outside the glass in slow-motion suspension.
+            </p>
+            <div class="card-spec-row">
+              <div class="card-spec-item">
+                <span class="spec-val">120 fps</span>
+                <span class="spec-lbl">Cinematic Capture</span>
+              </div>
+              <div class="card-spec-item">
+                <span class="spec-val">Velvet</span>
+                <span class="spec-lbl">Viscosity Matrix</span>
+              </div>
+              <div class="card-spec-item">
+                <span class="spec-val">Golden</span>
+                <span class="spec-lbl">Crema Aeration</span>
+              </div>
+            </div>
+            <div class="card-cta-group">
+              <a href="#variants-section" class="btn-primary-pill">Discover The Reserve</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Frames 139 - 179 -->
+          <div class="hero-story-card" data-card="4">
+            <div class="card-step-badge">04 / HARMONIC EQUILIBRIUM</div>
+            <h2 class="card-title">Settle into Pure Silk.</h2>
+            <p class="card-desc">
+              As ripples settle, complex flavor molecules lock into place: bittersweet cocoa, smoked walnut, and natural dairy sweetness in transcendent balance.
+            </p>
+            <div class="card-spec-row">
+              <div class="card-spec-item">
+                <span class="spec-val">9.4</span>
+                <span class="spec-lbl">Cupping Score</span>
+              </div>
+              <div class="card-spec-item">
+                <span class="spec-val">2.4°C</span>
+                <span class="spec-lbl">Serving Temperature</span>
+              </div>
+              <div class="card-spec-item">
+                <span class="spec-val">Batch #84</span>
+                <span class="spec-lbl">Strictly Limited</span>
+              </div>
+            </div>
+            <div class="card-cta-group">
+              <a href="#reservation-section" class="btn-primary-pill">Reserve Your Tasting</a>
+              <a href="#atelier-studio" class="btn-secondary-pill">Customize Blend</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Apple-Style Minimal Scroll Prompt Cue -->
+        <div class="scroll-indicator-cue" id="scroll-prompt-cue" aria-hidden="true">
+          <div class="cue-mouse-icon">
+            <div class="cue-mouse-wheel"></div>
+          </div>
+          <span>Scroll to Cascade Ice & Splash</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 1: PRODUCT EXPERIENCE & CLOSE-UP LENS
+         ========================================================================== -->
+    <section id="product-experience">
+      <div class="section-header">
+        <span class="section-eyebrow">Product Experience</span>
+        <h2 class="section-title">Precision in Every Drop.</h2>
+        <p class="section-subtitle">
+          Engineered for the senses. Inspect the microscopic physics of cold gravity extraction, crystal density, and crema hydrodynamics.
+        </p>
+      </div>
+
+      <div class="product-experience-grid">
+        <!-- Interactive Lens Viewer -->
+        <div class="lens-showcase-container">
+          <div class="lens-preview-card">
+            <img 
+              id="lens-showcase-img" 
+              src="./ezgif-872002fbc489ccec-jpg/ezgif-frame-015.jpg" 
+              alt="High resolution macro detail of NESCAFE cold brew coffee"
+            >
+            <div class="lens-glass-reflection"></div>
+            <div class="lens-corner-badge">Interactive Macro Lens</div>
+          </div>
+
+          <!-- Lens Viewport Switcher Tabs -->
+          <div class="lens-tabs-bar">
+            <button class="lens-tab-btn active" data-lens="cascade">The Cream Swirl</button>
+            <button class="lens-tab-btn" data-lens="ice">Sub-Zero Ice</button>
+            <button class="lens-tab-btn" data-lens="splash">The Crown Splash</button>
+          </div>
+
+          <div class="lens-caption-box">
+            <h3 id="lens-caption-title">Micro-Cream Gravity Cascades</h3>
+            <p id="lens-caption-desc">
+              Highland cream filtered to microscopic density, sinking through cold coffee in hypnotic Brownian swirls without rapid phase separation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Technical Specification Cards -->
+        <div class="product-specs-column">
+          <div class="tech-spec-card">
+            <div class="tech-spec-left">
+              <span class="tech-spec-num">SPEC 01</span>
+              <h4 class="tech-spec-label">Extraction Duration</h4>
+              <p class="tech-spec-desc">Gravity cold-immersion over volcanic stone</p>
+            </div>
+            <div class="tech-spec-val">24 Hours</div>
+          </div>
+
+          <div class="tech-spec-card">
+            <div class="tech-spec-left">
+              <span class="tech-spec-num">SPEC 02</span>
+              <h4 class="tech-spec-label">Thermal Calibration</h4>
+              <p class="tech-spec-desc">Maintained throughout brew cycle</p>
+            </div>
+            <div class="tech-spec-val">2.4°C</div>
+          </div>
+
+          <div class="tech-spec-card">
+            <div class="tech-spec-left">
+              <span class="tech-spec-num">SPEC 03</span>
+              <h4 class="tech-spec-label">Acidity Delta</h4>
+              <p class="tech-spec-desc">Compared to traditional hot extraction</p>
+            </div>
+            <div class="tech-spec-val">-68%</div>
+          </div>
+
+          <div class="tech-spec-card">
+            <div class="tech-spec-left">
+              <span class="tech-spec-num">SPEC 04</span>
+              <h4 class="tech-spec-label">Bean Elevation</h4>
+              <p class="tech-spec-desc">Single-origin volcanic highlands</p>
+            </div>
+            <div class="tech-spec-val">1,850m</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 2: INGREDIENTS & SENSORY PILLARS
+         ========================================================================== -->
+    <section id="sensory-section">
+      <div class="section-header">
+        <span class="section-eyebrow">Ingredients & Sensory</span>
+        <h2 class="section-title">The Four Elements of Balance.</h2>
+        <p class="section-subtitle">
+          Pure ingredients orchestrated with scientific precision. Every sip delivers uncompromised clarity, natural sweetness, and a lingering velvety mouthfeel.
+        </p>
+      </div>
+
+      <!-- 4 Core Pillars -->
+      <div class="sensory-pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 2L15 8H9L12 2ZM3 13L9 11L6 17L3 13ZM21 13L18 17L15 11L21 13ZM12 22L9 16H15L12 22Z"/></svg>
+          </div>
+          <h3 class="pillar-title">Alpine Glacial Ice</h3>
+          <p class="pillar-desc">
+            Triple-purified spring water frozen at -18°C into high-density crystal cubes. Slow, uniform melting keeps flavor intensity locked in without watering down.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 3C7.03 3 3 7.03 3 12C3 16.97 7.03 21 12 21C16.97 21 21 16.97 21 12C21 7.03 16.97 3 12 3ZM12 19C8.13 19 5 15.87 5 12C5 8.13 8.13 5 12 5C15.87 5 19 8.13 19 12C19 15.87 15.87 19 12 19Z"/></svg>
+          </div>
+          <h3 class="pillar-title">Highland Arabica</h3>
+          <p class="pillar-desc">
+            Handpicked ripe cherries from volcanic soils at 1,850m altitude. Slow medium-dark roast unlocks deep cacao, hazelnut, and sweet berry aromatics.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4C9.11 4 6.6 5.64 5.35 8.04C2.34 8.36 0 10.91 0 14C0 17.31 2.69 20 6 20H19C21.76 20 24 17.76 24 15C24 12.36 21.95 10.22 19.35 10.04Z"/></svg>
+          </div>
+          <h3 class="pillar-title">Micro-Filtered Cream</h3>
+          <p class="pillar-desc">
+            Fresh sweet cream filtered to microscopic droplet consistency. Cascades gently downward creating hypnotic marbling and a silky, opulent finish.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V11H13V17ZM13 9H11V7H13V9Z"/></svg>
+          </div>
+          <h3 class="pillar-title">Zero-Heat Immersion</h3>
+          <p class="pillar-desc">
+            Gravity-fed drop by drop extraction over 24 hours. Heat is entirely omitted to preserve fragile aromatic terpenes while discarding bitter tannins.
+          </p>
+        </div>
+      </div>
+
+      <!-- Interactive Flavor Spectrum Radar -->
+      <div class="sensory-radar-container">
+        <div class="radar-left">
+          <h3 class="section-title" style="font-size: 2rem; margin-bottom: 8px;">Interactive Flavor Matrix</h3>
+          <p class="section-subtitle" style="font-size: 0.95rem;">
+            Select a reserve blend to inspect its calibrated cupping radar, sweetness levels, and aromatic intensity.
+          </p>
+
+          <div class="radar-picker-group">
+            <button class="flavor-select-pill active" data-blend="classic">Classic Noir</button>
+            <button class="flavor-select-pill" data-blend="vanilla">Bourbon Vanilla</button>
+            <button class="flavor-select-pill" data-blend="hazelnut">Hazelnut Mist</button>
+            <button class="flavor-select-pill" data-blend="cacao">Dark Cacao</button>
+          </div>
+
+          <div class="flavor-stat-bars">
+            <div class="flavor-stat-item">
+              <div class="stat-label-row">
+                <span>Sweetness Balance</span>
+                <span class="stat-num">Medium-Low</span>
+              </div>
+              <div class="stat-track">
+                <div class="flavor-stat-fill" data-metric="sweet"></div>
+              </div>
+            </div>
+
+            <div class="flavor-stat-item">
+              <div class="stat-label-row">
+                <span>Bright Acidity</span>
+                <span class="stat-num">Ultra-Clean</span>
+              </div>
+              <div class="stat-track">
+                <div class="flavor-stat-fill" data-metric="acidity"></div>
+              </div>
+            </div>
+
+            <div class="flavor-stat-item">
+              <div class="stat-label-row">
+                <span>Body & Viscosity</span>
+                <span class="stat-num">Rich & Heavy</span>
+              </div>
+              <div class="stat-track">
+                <div class="flavor-stat-fill" data-metric="body"></div>
+              </div>
+            </div>
+
+            <div class="flavor-stat-item">
+              <div class="stat-label-row">
+                <span>Roast Depth</span>
+                <span class="stat-num">Deep Obsidian</span>
+              </div>
+              <div class="stat-track">
+                <div class="flavor-stat-fill" data-metric="roast"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SVG Radar Visualization -->
+        <div class="radar-right-visual">
+          <svg class="radar-svg" viewBox="0 0 300 300">
+            <!-- Concentric Guide Rings -->
+            <polygon points="150,50 245,119 209,231 91,231 55,119" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+            <polygon points="150,85 216,133 191,211 109,211 84,133" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+            <polygon points="150,115 183,139 170,178 130,178 117,139" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            
+            <!-- Axis lines -->
+            <line x1="150" y1="150" x2="150" y2="50" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <line x1="150" y1="150" x2="245" y2="119" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <line x1="150" y1="150" x2="209" y2="231" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <line x1="150" y1="150" x2="91" y2="231" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <line x1="150" y1="150" x2="55" y2="119" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+
+            <!-- Axis Labels -->
+            <text x="150" y="38" fill="#a1a1a6" font-size="11" text-anchor="middle" font-weight="500">Sweetness</text>
+            <text x="255" y="122" fill="#a1a1a6" font-size="11" text-anchor="start" font-weight="500">Acidity</text>
+            <text x="215" y="250" fill="#a1a1a6" font-size="11" text-anchor="start" font-weight="500">Body</text>
+            <text x="85" y="250" fill="#a1a1a6" font-size="11" text-anchor="end" font-weight="500">Roast</text>
+            <text x="45" y="122" fill="#a1a1a6" font-size="11" text-anchor="end" font-weight="500">Aroma</text>
+
+            <!-- Dynamic Animated Radar Polygon -->
+            <polygon id="radar-polygon" points="150,125 240,120 205,225 95,225 60,120" stroke="#d4a359" stroke-width="2" fill="rgba(212,163,89,0.2)"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 3: THE BRAND STORY & SCROLL-DRIVEN WORD ILLUMINATION
+         ========================================================================== -->
+    <section id="story-section">
+      <div class="story-wrapper">
+        <div class="story-quote-mark">“</div>
+        <div class="story-manifesto-text">
+          <span class="story-reveal-line">In an accelerated world,</span>
+          <span class="story-reveal-line">true luxury is the courage to take time.</span>
+          <span class="story-reveal-line">We abandoned steam, speed, and pressure.</span>
+          <span class="story-reveal-line">Instead, we let sub-zero gravity coax</span>
+          <span class="story-reveal-line">every delicate essential oil and cocoa note</span>
+          <span class="story-reveal-line">over twenty-four undisturbed hours.</span>
+          <span class="story-reveal-line">When crystalline ice meets this slow elixir,</span>
+          <span class="story-reveal-line">a kinetic ritual of cold perfection is born.</span>
+        </div>
+
+        <div class="story-roaster-seal">
+          <div class="seal-icon">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M12 1L15 8H22L16 13L18 20L12 16L6 20L8 13L2 8H9L12 1Z"/>
+            </svg>
+          </div>
+          <div class="seal-text">
+            <strong>NESCAFÉ Atelier Master Roasters</strong>
+            <span>Verified 24h Cold Drip Certification · Switzerland & Ethiopia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 4: THE VARIANTS RESERVE (4 CURATED EXPRESSIONS)
+         ========================================================================== -->
+    <section id="variants-section">
+      <div class="section-header">
+        <span class="section-eyebrow">The Reserve Collection</span>
+        <h2 class="section-title">Four Expressions of Cold Craft.</h2>
+        <p class="section-subtitle">
+          From uncompromising dark roast purism to botanical infusions. Discover the curated spectrum of NESCAFÉ Cold Brew Atelier.
+        </p>
+      </div>
+
+      <div class="variants-grid">
+        <!-- Variant 1: Classic Noir -->
+        <article class="variant-card" data-variant="noir">
+          <div class="variant-visual-wrap">
+            <img class="variant-img" src="./ezgif-872002fbc489ccec-jpg/ezgif-frame-001.jpg" alt="NESCAFE Classic Noir Cold Brew">
+            <span class="variant-intensity-badge">Intensity 9/10</span>
+          </div>
+          <div class="variant-body">
+            <span class="variant-origin-tag">Yirgacheffe & Huila</span>
+            <h3 class="variant-name">Classic Noir Reserve</h3>
+            <p class="tech-spec-desc">Uncompromised single-origin cold brew. Deep bittersweet cacao, toasted walnut, and an enduring velvet finish.</p>
+            <div class="variant-notes-tags">
+              <span class="tag-pill">Bittersweet Cacao</span>
+              <span class="tag-pill">Smoked Cedar</span>
+              <span class="tag-pill">Toasted Pecan</span>
+            </div>
+            <div class="variant-footer-action">
+              <button class="btn-view-notes">
+                <span>Explore Notes</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Variant 2: Bourbon Vanilla -->
+        <article class="variant-card" data-variant="vanilla">
+          <div class="variant-visual-wrap">
+            <img class="variant-img" src="./ezgif-872002fbc489ccec-jpg/ezgif-frame-025.jpg" alt="NESCAFE Bourbon Vanilla Velvet Cold Brew">
+            <span class="variant-intensity-badge">Intensity 7/10</span>
+          </div>
+          <div class="variant-body">
+            <span class="variant-origin-tag">Bourbon Island Bean</span>
+            <h3 class="variant-name">Bourbon Vanilla Velvet</h3>
+            <p class="tech-spec-desc">Whole cured Madagascar vanilla beans steeped inside the cold extraction cycle with a swirl of fresh highland cream.</p>
+            <div class="variant-notes-tags">
+              <span class="tag-pill">Madagascar Vanilla</span>
+              <span class="tag-pill">Butterscotch</span>
+              <span class="tag-pill">Sweet Cream</span>
+            </div>
+            <div class="variant-footer-action">
+              <button class="btn-view-notes">
+                <span>Explore Notes</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Variant 3: Toasted Hazelnut -->
+        <article class="variant-card" data-variant="hazelnut">
+          <div class="variant-visual-wrap">
+            <img class="variant-img" src="./ezgif-872002fbc489ccec-jpg/ezgif-frame-075.jpg" alt="NESCAFE Toasted Hazelnut Mist Cold Brew">
+            <span class="variant-intensity-badge">Intensity 6/10</span>
+          </div>
+          <div class="variant-body">
+            <span class="variant-origin-tag">Piedmont Hazelnut</span>
+            <h3 class="variant-name">Toasted Hazelnut Mist</h3>
+            <p class="tech-spec-desc">Dry-roasted Italian hazelnuts steeped to capture warm brioche and toasted nutty aromas without heavy sugars.</p>
+            <div class="variant-notes-tags">
+              <span class="tag-pill">Piedmont Hazelnut</span>
+              <span class="tag-pill">Warm Brioche</span>
+              <span class="tag-pill">Toffee Crunch</span>
+            </div>
+            <div class="variant-footer-action">
+              <button class="btn-view-notes">
+                <span>Explore Notes</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Variant 4: Dark Cacao -->
+        <article class="variant-card" data-variant="cacao">
+          <div class="variant-visual-wrap">
+            <img class="variant-img" src="./ezgif-872002fbc489ccec-jpg/ezgif-frame-140.jpg" alt="NESCAFE Dark Cacao and Sea Salt Cold Brew">
+            <span class="variant-intensity-badge">Intensity 8/10</span>
+          </div>
+          <div class="variant-body">
+            <span class="variant-origin-tag">Arriba 72% & Fleur de Sel</span>
+            <h3 class="variant-name">Dark Cacao & Sea Salt</h3>
+            <p class="tech-spec-desc">Single-origin Ecuadorian cacao nibs cold-macerated and accentuated with a delicate hint of Atlantic sea salt crystals.</p>
+            <div class="variant-notes-tags">
+              <span class="tag-pill">72% Arriba Cocoa</span>
+              <span class="tag-pill">Atlantic Fleur de Sel</span>
+              <span class="tag-pill">Dark Fudge</span>
+            </div>
+            <div class="variant-footer-action">
+              <button class="btn-view-notes">
+                <span>Explore Notes</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 5: THE INTERACTIVE ATELIER STUDIO (BLEND CRAFTER)
+         ========================================================================== -->
+    <section id="atelier-studio">
+      <div class="section-header">
+        <span class="section-eyebrow">Interactive Atelier</span>
+        <h2 class="section-title">Design Your Cold Brew Architecture.</h2>
+        <p class="section-subtitle">
+          Every palate is unique. Configure your base roast, botanical infusion, cream cloud ratio, and crystal ice geometry.
+        </p>
+      </div>
+
+      <div class="atelier-studio-card">
+        <!-- Interactive Controls -->
+        <div class="atelier-controls">
+          <!-- Step 1: Base Roast -->
+          <div class="custom-step-group">
+            <div class="custom-label-row">
+              <label>1. Select Base Extraction</label>
+              <span>Single Origin</span>
+            </div>
+            <div class="btn-options-row">
+              <button class="atelier-opt-btn atelier-base-btn active" data-value="Noir Reserve (Dark Roast)">Noir Reserve (Dark)</button>
+              <button class="atelier-opt-btn atelier-base-btn" data-value="Highland Blonde (Medium Roast)">Highland Blonde (Medium)</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Infusion Essence -->
+          <div class="custom-step-group">
+            <div class="custom-label-row">
+              <label>2. Botanical Infusion</label>
+              <span>Cold Macerated</span>
+            </div>
+            <div class="btn-options-row">
+              <button class="atelier-opt-btn atelier-infusion-btn active" data-value="Pure Reserve (Zero Sugar)">Pure Reserve</button>
+              <button class="atelier-opt-btn atelier-infusion-btn" data-value="Bourbon Vanilla Bean">Bourbon Vanilla</button>
+              <button class="atelier-opt-btn atelier-infusion-btn" data-value="Roasted Piedmont Hazelnut">Piedmont Hazelnut</button>
+              <button class="atelier-opt-btn atelier-infusion-btn" data-value="72% Arriba Dark Cacao">Dark Cacao</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Cream Marbling Slider -->
+          <div class="custom-step-group">
+            <div class="custom-label-row">
+              <label for="atelier-cream-slider">3. Micro-Cream Cloud Ratio</label>
+              <span id="atelier-cream-val">25%</span>
+            </div>
+            <input 
+              type="range" 
+              id="atelier-cream-slider" 
+              class="timeline-range-slider" 
+              min="0" 
+              max="60" 
+              value="25" 
+              step="5"
+            >
+          </div>
+
+          <!-- Step 4: Ice Matrix -->
+          <div class="custom-step-group">
+            <div class="custom-label-row">
+              <label>4. Crystalline Ice Matrix</label>
+              <span>Sub-Zero Purity</span>
+            </div>
+            <div class="btn-options-row">
+              <button class="atelier-opt-btn atelier-ice-btn active" data-value="3 Crystalline Cubes">3 Geometric Cubes</button>
+              <button class="atelier-opt-btn atelier-ice-btn" data-value="1 Slow-Melt Glacial Sphere">1 Glacial Sphere</button>
+              <button class="atelier-opt-btn atelier-ice-btn" data-value="Chilled Neat (Zero Ice)">Chilled Neat</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Visual Glass Preview -->
+        <div class="atelier-glass-preview-box">
+          <div class="interactive-glass-graphic">
+            <div id="atelier-ice-display">
+              <div class="mini-ice-cube"></div>
+              <div class="mini-ice-cube"></div>
+              <div class="mini-ice-cube"></div>
+            </div>
+            <div id="atelier-glass-liquid">
+              <div id="atelier-cream-layer"></div>
+            </div>
+          </div>
+
+          <div class="atelier-recipe-meta">
+            <div id="atelier-recipe-summary">
+              <!-- Rendered via JS -->
+            </div>
+            <div id="atelier-batch-code">BATCH #NC-8420</div>
+          </div>
+
+          <a href="#reservation-section" class="btn-primary-pill" style="width: 100%; justify-content: center;">
+            Order This Custom Blend
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         SECTION 6: CALL TO ACTION (THE COLD BREW ALLOCATION)
+         ========================================================================== -->
+    <section id="reservation-section">
+      <div class="cta-box-center">
+        <span class="section-eyebrow">Limited Allocation</span>
+        <h2 class="cta-headline">Experience NESCAFÉ Cold Brew.</h2>
+        <p class="cta-sub">
+          Allocations for Batch No. 84 are now strictly open. Experience chilled temperature-controlled delivery directly from the roastery to your door.
+        </p>
+
+        <!-- VIP Reservation Form -->
+        <form class="cta-reservation-form" id="reservation-form">
+          <input 
+            type="email" 
+            class="cta-input" 
+            placeholder="Enter your private concierge email..." 
+            required
+            aria-label="Email for allocation reservation"
+          >
+          <button type="submit" class="cta-submit-btn">Reserve Allocation</button>
+        </form>
+
+        <!-- Success Animation State -->
+        <div class="reservation-success-box" id="reservation-success">
+          <h3 class="success-title">✓ Allocation Confirmed</h3>
+          <p class="success-desc">
+            Your invitation for Batch No. 84 has been logged. Our private atelier concierge will reach out with your dispatch tracking within 24 hours.
+          </p>
+        </div>
+
+        <div class="cta-perks-row">
+          <div class="cta-perk-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2L15 8H9L12 2ZM3 13L9 11L6 17L3 13ZM21 13L18 17L15 11L21 13ZM12 22L9 16H15L12 22Z"/></svg>
+            <span>Sub-Zero Cold Chain Dispatch</span>
+          </div>
+          <div class="cta-perk-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/></svg>
+            <span>Bespoke Tasting Glassware Included</span>
+          </div>
+          <div class="cta-perk-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"/></svg>
+            <span>100% Recyclable Dark Glass</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================================================================
+       SECTION 7: APPLE-STYLE MINIMAL FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-top-grid">
+      <div class="footer-brand-column">
+        <div class="footer-logo-title">NESCAFÉ <span>ATELIER</span></div>
+        <p class="footer-brand-desc">
+          The international pinnacle of cold coffee craftsmanship. Reimagining the kinetic art of slow-drip coffee across 42 countries.
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-header">The Reserve</h4>
+        <ul class="footer-links-list">
+          <li><a href="#variants-section">Classic Noir</a></li>
+          <li><a href="#variants-section">Bourbon Vanilla Velvet</a></li>
+          <li><a href="#variants-section">Toasted Hazelnut Mist</a></li>
+          <li><a href="#variants-section">Dark Cacao & Sea Salt</a></li>
+          <li><a href="#atelier-studio">Custom Blend Lab</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-header">Science & Craft</h4>
+        <ul class="footer-links-list">
+          <li><a href="#product-experience">24-Hour Extraction</a></li>
+          <li><a href="#sensory-section">Glacial Crystal Matrix</a></li>
+          <li><a href="#sensory-section">Volcanic Soil Sourcing</a></li>
+          <li><a href="#story-section">Roaster Certification</a></li>
+          <li><a href="#story-section">Sustainability Charter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-header">Atelier Concierge</h4>
+        <ul class="footer-links-list">
+          <li><a href="#reservation-section">Private Allocation</a></li>
+          <li><a href="#reservation-section">Bespoke Hospitality</a></li>
+          <li><a href="#reservation-section">Tasting Salons: Zurich · Tokyo · Paris</a></li>
+          <li><a href="#reservation-section">Contact Curator</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom-row">
+      <span>© 2026 NESCAFÉ Cold Brew Atelier. All rights reserved.</span>
+      <div class="footer-legal-links">
+        <a href="#">Privacy Charter</a>
+        <a href="#">Terms of Allocation</a>
+        <a href="#">Provenance Verification</a>
+        <a href="#">Cookie Preferences</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Variant Tasting Notes Modal Drawer -->
+  <div class="modal-overlay" id="tasting-modal" role="dialog" aria-modal="true" aria-labelledby="modal-variant-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">✕</button>
+      <h3 id="modal-variant-title">Variant Title</h3>
+      <p id="modal-variant-desc">Description of the variant blend.</p>
+      <div class="modal-notes-box">
+        <div class="modal-sub-label">Calibrated Tasting Notes</div>
+        <div id="modal-tasting-notes"></div>
+      </div>
+      <a href="#reservation-section" class="btn-primary-pill" onclick="document.getElementById('tasting-modal').classList.remove('open')">
+        Reserve This Blend
+      </a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/canvas-player.js"></script>
+  <script src="js/interactions.js"></script>
+</body>
+</html>
